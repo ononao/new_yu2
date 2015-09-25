@@ -1,0 +1,90 @@
+%div.firstContent
+  %div.word
+    %h1 Start prototyping your next project
+    %p Terry Richardson cardigan whatever gentrify Tumblr, gluten-free jean shorts cray Schlitz selvage DIY sustainable Helvetica sriracha.
+    Banh mi ethical, put a bird on it VHS irony bicycle rights slow-carb literally retro skateboard ugh 90's Helvetica hashtag. Next
+    %br level beard keffiyeh cornhole pork belly, slow-carb Schlitz.
+  %div.pen
+    %a{:href => '#'}
+      %img{src: 'assets/img/pen.png'}
+
+%div.slideContent
+  %div.word
+    %h1 Works in any browser
+    %p Revolutionary notebook with eco-friendry paper,
+    advanced surface technology and digital sharing integration.
+
+  %div#myCarousel.carousel.slide{data: {ride: 'carousel'}}
+
+
+
+    %div.carousel-inner{:role => 'listbox'}
+      %div.item.active
+        %img{src: 'assets/img/slide.png'}
+
+      %div.item
+        %img{src: 'assets/img/slide.png'}
+
+      %div.item
+        %img{src: 'assets/img/slide.png'}
+
+      %div.item
+        %img{src: 'assets/img/slide.png'}
+
+    %a.right.carousel-control{:href => '#myCarousel', :role => 'button', data:{slde: 'next'}}
+      %span.glyphicon.glyphicon-cheron-right{aria: {hidden: 'true'}}
+      %span.sr-only
+
+    %a.left.carousel-control{:href => '#myCarousel', :role => 'button', data: {slide: 'prev'}}
+      %span.glyphicon.glyphicon-cheron-left{aria: {hidden: 'true'}}
+      %span.sr-only
+
+
+
+%div.userContent
+  %div.word
+    %h1 Flexible pricing plans to fulfill your needs and solve your problems
+    %p{:style => 'color: #98a0a5'} Revolutionary notebook with eco-friendly paper, advanced surface
+    %p{:style => 'color: #98a0a5'} technology and digital sharing integration.
+  %div.selectContent.cf
+    %div.box.foreverContent
+      %img{src: 'assets/img/forever.png'}
+      %br
+      %h2
+        %a{:href => '#'} Sign Up
+    %div.box.professionalContent
+      %img{src: 'assets/img/professional.png'}
+      %br
+      %h2
+        %a{:href => '#'} Buy Now
+    %div.box.enterpriceContent
+      %img{src: '/assets/img/enterprice.png'}
+      %br
+      %h2
+        %a{:href => '#'} Buy Now
+
+  %div.wordUnder
+    %p{:style => 'color: #98a0a5'} If you have got any questions related to pricing please
+    %p{:style => 'color: #98a0a5'} get in touch with us using the form below.
+
+%div.formContent
+  %div.word
+    %h1 Get in Touch
+    %p Got any questions? Feel free to get in touch with us.
+    We would love to hear from you.
+  %form{:action => "/", :method => "post"}
+    %input.name{:name => "name", :size => "30", :value => "Name"}
+    %br
+    %input.mail{:name => "mail", :size => "30", :value => "Mail"}
+    %br
+    %input.message{:name => "message", :size => "100", :value => "Message"}
+    %br
+    %input.send{:type => "submit", :value => "send"}
+
+  %sns-list
+    %a{:href => '#'}
+      %img{src: 'assets/img/twitter.png', :href => '#'}
+    %a{:href => '#'}
+      %img{src: 'assets/img/facebook.png'}
+    %a{:href => '#'}
+      %img{src: 'assets/img/google.png'}
