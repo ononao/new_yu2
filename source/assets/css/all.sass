@@ -1,3 +1,5 @@
+@import "mixin"
+
 h1
   font-size: 25px
 
@@ -24,17 +26,32 @@ h2
   background-position: center center
   background-repeat: no-repeat
   background-size: cover
+  +mediaquery-tablet-small
+    height: 520px
 
 .headerLeft
   float: left
   img
-  margin-left: 200px
-  margin-top: 100px
+    margin-left: 200px
+    margin-top: 100px
+    +mediaquery-tablet-small
+      margin-left: 100px
+      margin-top: 60px
+    +mediaquery-tablet
+      margin-left: 315px
+    +mediaquery-tablet
+      margin-left: 326px
+
 
 .headerRight
   float: right
   margin-right: 200px
   margin-top: 100px
+  +mediaquery-tablet-small
+    margin-right: 35px
+    margin-top: 75px
+  +mediaquery-tablet
+    margin-right: 225px
 
   li
     margin-left: 0px
@@ -43,6 +60,7 @@ h2
     color: #fff
     padding-right: 20px
 
+
 .headerRight a
   color: #fff
 
@@ -50,13 +68,14 @@ h2
   text-align: center
   color: #fff
   padding-top: 300px
+  +mediaquery-tablet-small
+    padding-top: 250px
 
 .headerButton h2
   text-align: center
   margin-top: 40px
 
 .headerButton a
-  border: 1px solid #a4b9be
   background-color: #a4b9be
   border-radius: 5px
   padding: 15px 50px 15px 50px
@@ -69,10 +88,14 @@ h2
   width: 100%
   height: 400px
   text-align: center
+  +mediaquery-tablet-small
+    height: 430px
 
 .pen
   text-align: center
   margin-top: 100px
+  +mediaquery-tablet-small
+    margin-top: 70px
 
 .slideContent
   width: 100%
@@ -80,6 +103,8 @@ h2
   background-color: #a4b9be
   text-align: center
   color: #fff
+  +mediaquery-tablet-small
+    height: 600px
 
 .item img
   padding-top: 60px
@@ -93,6 +118,10 @@ h2
   background-color: #fcfcfc
   .word
     text-align: center
+  +mediaquery-tablet-small
+    height: 1800px
+  +mediaquery-tablet
+    height: 1800px
 
 .selectContent
   text-align: center
@@ -103,6 +132,12 @@ h2
   padding-left: 50px
   margin-left: auto
   margin-right: auto
+  +mediaquery-tablet-small
+    padding-left: 0px
+  +mediaquery-tablet
+    display: block
+    padding-left: 0px
+
 
 .wordUnder
   text-align: center
@@ -113,7 +148,6 @@ h2
   margin-top: 30px
 
 .foreverContent a
-  border: 1px solid #535a5e
   background-color: #535a5e
   border-radius: 5px
   padding: 15px 115px 15px 115px
@@ -126,7 +160,6 @@ h2
   margin-top: 30px
 
 .professionalContent a
-  border: 1px solid #58ad52
   background-color: #58ad52
   border-radius: 5px
   padding: 15px 115px 15px 115px
@@ -139,7 +172,6 @@ h2
   margin-top: 30px
 
 .enterpriceContent a
-  border: 1px solid #53a1ad
   background-color: #53a1ad
   border-radius: 5px
   padding: 15px 115px 15px 115px
@@ -184,6 +216,7 @@ h2
   box-shadow: none
   margin-top: 10px
   color: #4d555a
+  border-radius: 5px
 
 .send:hover
   background-color: #fff
@@ -197,16 +230,23 @@ h2
   float: left
   padding: 25px 0px 0px 150px
   color: #cecfd0
+  +mediaquery-tablet-small
+    padding: 0px
 
 .footerRight
   float: right
   padding: 25px 150px 0px 0px
+  +mediaquery-tablet-small
+    padding: 20px 0px 0px 0px
+  +mediaquery-tablet
+    padding: 20px 0px 0px 0px
   li
     margin-left: 0px
     list-style-type: none
     display: inline
     padding-right: 20px
     color: #cecfd0
+
 
 
 .cf:before,

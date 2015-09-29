@@ -31,13 +31,15 @@
       %div.item
         %img{src: 'assets/img/slide.png'}
 
-    %a.right.carousel-control{:href => '#myCarousel', :role => 'button', data:{slde: 'next'}}
-      %span.glyphicon.glyphicon-cheron-right{aria: {hidden: 'true'}}
+    %a.left.carousel-control{:href => '#myCarousel', :role => 'button', data: {slide: 'prev'}}
+      %span.glyphicon.glyphicon-chevron-left{aria: {hidden: 'true'}}
       %span.sr-only
 
-    %a.left.carousel-control{:href => '#myCarousel', :role => 'button', data: {slide: 'prev'}}
-      %span.glyphicon.glyphicon-cheron-left{aria: {hidden: 'true'}}
+    %a.right.carousel-control{:href => '#myCarousel', :role => 'button', data: {slide: 'next'}}
+      %span.glyphicon.glyphicon-chevron-right{aria: {hidden: 'true'}}
       %span.sr-only
+
+
 
 
 
